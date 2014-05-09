@@ -1,0 +1,16 @@
+{
+  "name": "repoFinder",
+  "version": "0.0.1",
+  "homepage": "https://github.com/LordCHTsai/repoFinder",
+  "authors": [
+    "LordCHTsai <lord.chtsai@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.3.0-beta.7",
+    "angular-route": ""
+  },
+  "resolutions": {
+    "angular": "~1.3.0-beta.7"
+  }
+}

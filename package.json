@@ -1,0 +1,15 @@
+{
+    "name": "repoFinder",
+    "version": "0.0.1",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "coffee-script": ">=1.7.1",
+        "gulp": ">=3.6.2",
+        "gulp-coffee": ">=0.9",
+        "gulp-util": ">=0.9",
+        "gulp-less": "",
+        "gulp-bower": "",
+        "gulp-connect": ""
+    }
+}
