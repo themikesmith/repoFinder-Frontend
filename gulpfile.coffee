@@ -42,24 +42,24 @@ gulp.task 'watch', ->
             .pipe(connect.reload())
 
     gulp.watch [
-        './app/scripts/*.coffee',
-        './app/scripts/**/*.coffee'
+        'app/scripts/*.coffee',
+        'app/scripts/**/*.coffee'
     ] , ['coffee']
 
     gulp.watch [
-        './app/styles/*.less'
+        'app/styles/*.less'
     ] , ['less']
 
     gulp.watch [
-        './app/views/*.html'
+        'app/views/*.html'
     ] , ['views']
 
     gulp.watch [
-        './app/index.html'
+        'app/index.html'
     ] , ['index']
 
     gulp.watch [
-        './app/bower_components/**/*'
+        'app/bower_components/**/*'
     ] , ['bower']
 
 gulp.task 'connect', ->

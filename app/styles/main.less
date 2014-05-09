@@ -1,22 +1,56 @@
-@bgcolor:   rgba(50,50,50, 0.2);
-@infocolor: rgba(210,210,210, 0.4);
-@ctcolor:   rgba(255,255,255, 0.8);
-@edge:      5px;
+@bgcolor:        rgba(10,10,10, 0.1);
+@infocolor:      rgba(210,210,210, 0.4);
+@ctcolor:        rgba(255,255,255, 0.8);
+@titleColor:     rgba(50,200,50, 0.7);
+@titleWColor:    rgba(255,255,255, 1);
+@subtitleWColor: rgba(20,50,20, 1);
+
+@edge:         5px;
 
 html, body{
   width: 100%;
   height: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
   text-align: center;
 }
+
 .base {
-  padding: 50px;
-  margin: 10px;
-  background-color: @bgcolor;
-  border-radius: @edge;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  //background-color: @bgcolor;
 }
+
+.top {
+  height: 30px;
+}
+
+.title {
+  text-align: left;
+  padding: 20px;
+  background-color: @titleColor;
+  min-height: 100px;
+}
+
+.title-words {
+  color: @titleWColor;
+}
+
+.subtitle-words {
+  color: @titleWColor;
+}
+
+.search {
+  height: 60px;
+  padding: 10px;
+  //background-color: green;
+}
+
 .content {
   margin: 10px;
   background-color: @ctcolor;
