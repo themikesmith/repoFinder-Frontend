@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div ng-show="resShow">{{res.bbCount}} results</div>
+  </div>
+</div>
+<div class="repo" ng-repeat="item in res.repo">
+  <div class="container-fluid">
+    <div class="row" ng-class="item.from">
+      <div class="col-md-4"><i ng-class="item.icon"></i>{{item.from}}</div>
+      <div class="col-md-8">Last updated: {{item.update | date: 'yyyy-MM-dd'}}</div>
+    </div>
+    <div class="row">
+      <div class="col-md-5"><img class="avatar img-thumbnail" ng-src="{{item.avatar}}"><p>{{item.author}}</p></div>
+      <div class="col-md-7 description">{{item.description}}</div>
+    </div>
+    <div class="row">
+      <div class="col-md-12"><a target="_blank" class="btn-link" ng-href="{{item.url}}">{{item.name}}</a></div>
+    </div>
+  <div>
+</div>
+

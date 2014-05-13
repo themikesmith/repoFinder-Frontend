@@ -26,6 +26,10 @@ gulp.task 'index', ->
     gulp.src ['./app/index.html']
         .pipe(gulp.dest('./dist/'))
 
+gulp.task 'images', ->
+    gulp.src ['./app/images/*', './app/images/**/*']
+        .pipe(gulp.dest('./dist/images/'))
+
 gulp.task 'bower', ->
     bower()
         .pipe(gulp.dest('./dist/bower_components/'))
@@ -62,6 +66,11 @@ gulp.task 'watch', ->
         'app/bower_components/**/*'
     ] , ['bower']
 
+    gulp.watch [
+        'app/images/*',
+        'app/images/**/*'
+    ] , ['images']
+
 gulp.task 'connect', ->
     connect.server({
         root: ['dist'],
@@ -69,4 +78,4 @@ gulp.task 'connect', ->
         livereload: true
     })
 
-gulp.task 'default', ['connect', 'coffee', 'less', 'views', 'index', 'bower', 'watch']
+gulp.task 'default', ['connect', 'coffee', 'less', 'views', 'index', 'bower', 'watch', 'images']

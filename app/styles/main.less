@@ -1,9 +1,9 @@
-@bgcolor:        rgba(10,10,10, 0.1);
+@bgcolor:        rgba(255,250,200, 0.1);
 @infocolor:      rgba(210,210,210, 0.4);
 @ctcolor:        rgba(255,255,255, 0.8);
-@titleColor:     rgba(50,200,50, 0.7);
+@titleColor:     rgba(230,30,30, 0.7);
 @titleWColor:    rgba(255,255,255, 1);
-@subtitleWColor: rgba(20,50,20, 1);
+@subtitleWColor: rgba(255,255,255, 0.7);
 
 @edge:         5px;
 
@@ -42,7 +42,7 @@ body {
 }
 
 .subtitle-words {
-  color: @titleWColor;
+  color: @subtitleWColor;
 }
 
 .search {
@@ -52,10 +52,8 @@ body {
 }
 
 .content {
-  margin: 10px;
   background-color: @ctcolor;
-  border-radius: @edge;
-  overflow: scroll;
+  overflow: auto;
   padding: 10px;
 }
 .searchInput {
@@ -64,20 +62,6 @@ body {
 .inline {
   display: inline-flex;
   //background-color: green;
-}
-.info {
-  display: inline-flex;
-  width: 500px;
-  text-align: left;
-  padding: 3px;
-}
-img.avatar {
-  width: 60px;
-  height: 60px;
-}
-a.link {
-  font-size: 20px;
-  padding-top: 12px;
 }
 .odd {
   background-color: @infocolor;

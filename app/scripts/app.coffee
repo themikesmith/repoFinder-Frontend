@@ -1,13 +1,13 @@
 'use strict'
 
 angular.module('repoFinder', ['ngRoute'])
-  .config ($routeProvider, $httpProvider, $locationProvider) ->
-    $routeProvider
-      .when '/',
-        templateUrl: 'views/main.html'
-      .otherwise
-        redirectTo: '/'
-    $locationProvider.html5Mode(true)
+.config ($routeProvider, $httpProvider, $locationProvider) ->
+  $routeProvider
+    .when '/',
+      templateUrl: 'views/main.html'
+    .otherwise
+      redirectTo: '/'
+  $locationProvider.html5Mode(true)
 #  .controller 'mainCtrl', ( $scope, $http )->
 #    $scope.resShow = false
 #    $scope.searchRes = []
